@@ -1,0 +1,267 @@
+
+Background	PAGE (1 of 7)	 
+Lesson 1: Background: Computing
+
+This section of the course will begin with a brief introduction, (hopefully review), of the most commonly used computer applications. The focus will be upon how the use of these programs gives a user different views of the information they are manipulating.
+
+Office Applications The three most common office software programs are word processor, spreadsheet and a database. Understanding the evolution of these programs and their data organization are crucial to their effective usage.
+File and Data Management Computers allow users to organize information into files, (a collection of related, organized, data). The major types of file and data management systems will be discussed in this section. An emphasis will be placed upon understanding the effects of these systems upon their users' information processing capabilities.
+Word and Text Processing Written language communication has been greatly affected by modern word processors. This will be a quick introduction/review of modern electronic writing tools and the limitations they place upon communication.
+Text (ascii, postscript, eps, rtf, HTML) Various file formats for storing text have been developed. This brief synopsis will provide an understanding of the purpose of these formats and their affect upon information sharing.
+
+
+ 	PAGE (2 of 7)	 
+Lesson 1: Background: Applications
+
+Word Processors, DataBase Management Systems and Spreadsheet programs can all be viewed as information processing systems. Data can be organized with and transposed between the various programs, (although an entire data set is in reality rarely transposed). One can view data organization from three different points: abstract, logical and physical. The abstract view is the data organization perceived by the user of the program. The logical view is the data organization implemented internally in the application, (as created by the programmer). The physical view is the actual hardware data organization.
+
+Each of the following sections will begin with a brief description of the program, the typical functions it provides and the type of data organization underlying the program. The last section, Data Transformation, will depict how data can be reorganized into the underlying storage scheme of the various programs.
+
+Word Processors
+
+WYSIWYG, (What You See Is What You Get ), word processors, (eg. MS Word), are actually a combination of two related programs: a text editor and a text formatter.
+
+ 
+
+
+
+Text Editors, (used extensively in programming), provide character and string, (a group of related characters), entry and manipulation operations such as insertion, modification, search and replace, etc. Text editors, (eg. UNIX EMACS), usually operate with fixed-size, (non-proportional or mono-spaced ), fonts in which each character is alloted the same horizontal space. This results in characters being aligned into rows and columns.
+
+Text formatters, (eg. TeX / LaTeX, nroff / troff, etc.), accept an input file which contains not only the actual text of a document, but also layout and typesetting of the document. This includes such things as the titles, headings, footnotes, margins, justifications, paragraph delimiters, type style, (bold, italics, strikethru etc.), page numbering, etc. Text formatters typically use variable size, (proportional), spaced fonts, in which each character may be given a different amount of horizontal spacing. This results in characters NOT being aligned into columns and equal sized rows. When output is displayed on a screen the formatter attempts to show a result as a close as possible to the final hard-copy output, (as WYSIWYG word processors).
+
+The abstract storage organization for word processsors is based upon a written document. As such they have operations to support traditional documents, (eg. content tables, headers, footers, paragraph delimiters, outlining, indexing and a host of others). This allows, (and for the most part requires), users to organize their information into this paradigm when utilizing a word processor.
+
+The underlying logical storage organization of word processors is that of a sequential list of symbols, (stream of characters, words or lines).
+
+
+
+The actual computer memory (RAM) storage representation of this list will differ depending upon the particular word processor.
+
+DataBase Management Systems
+
+Database systems are best defined in terms of their position and relation to the standard business data grouping:
+
+Characters : letters, digits & symbols.
+Fields (Data Elements) : composed of related characters.
+Record : a group of related fields.
+File: a group of related records.
+Data Base : a group of related files ( & the software to access the files).
+The majority of database systems use a relational organization, (eg. MS FoxPro). In this scheme data is  stored as a set of hierarchically related tables. Users perceive the organization abstractly as tables, (i.e. files), which within the same database set must share a common field, (column), with at least one other table in the database, (as can be seen in the MS Access example).
+
+
+
+A discussion of the underlying logical storage organization of database systems is, as the saying goes, beyond the scope of this text. Suffice it to say that the underlying logical structure, (Btrees), are hierarchical allowing a quasi-direct mapping to the abstract relational table display. Just as the use of any tool, (informational or otherwise), has direct affects upon it's users, so do databases. Users must organize their data hierarchically in tables in order to be effective.
+
+
+
+In addition to the obvious support for the hierarchical organizational paradigm, databases provide operations allowing users to re-organize data into answers to questions, (i.e. queries), reports, subsets of the the fields, designing custom input screens, etc.
+
+Spreadsheets
+
+Spreadsheets, (eg. MS Excel), are the electronic realization of an accounting ledger. They allow a user to abtractly organize data, (mostly numeric), into a column and row format and specify the mathematical relationships that exists between the various cells, (i.e. the intersection of a row and column - specified by the column letter followed by the row number or the cell label). Spreadsheets are often used to setup discrete simulations. By changing key base values that are related to many other values in the spreadsheet a user can quickly view the simulation affects due to the immediate recalculation of all cells.
+
+A user of a spreadsheet logically organizes their data into a two-dimensional matrix of static, (non-computed), values and formulas for the dynamic, (computed), values. This organization forces a user to decide upon a two-dimensional prioritizing of their data. A person must be concerned with the layout of the data in the matrix due to it's potential affect upon rapid comprehension of the information.
+
+
+
+The physical representation of spreadsheets would involve a discussion of the mapping of a matrix onto the one-dimensional, linear, memory of a computer. If interested the reader is referred to Pascal Plus Data Structures, third ed. by N. Dale & S. Lilly, pages 129-134 from D.C. Heath and Co. ? 1991.
+
+Data Transformation
+
+Despite the specific uses that the common computer applications have been designed around, one should realize that data is fluid. The organization of data into information can be altered by one to best match a particular problem at a given moment. Often new insights and understandings of complex data can be derived by transforming it into different underlying organizations.
+
+Consider the following simple example of student's grades in a course, (the numbers are purely fictional). In a word processor the data might be represented as a simple list:
+
+021542353 73 75 77 72 71 64; 027589848 87 97 100 88 91 87; 054648271 82 79 82 93 83 78; 141700439 91 50 93 89 81 79; 145725616 90 100 95 63 80 66; 164648428 79 67 38 50 48 27; 215824220 88 99 84 83 83 73; 220766654 87 76 68 70 54 46; 220780125 90 95 75 80 77 60; 224134136 92 92 75 80 81 73; 224339385 84 62 83 84 76 69
+
+This organization clearly shows the order of each piece of data, (i.e. Soc Sec Number, Program 1, Program 2, Program 3, Test 1, Test 2, Test 3. However the organization explains little if anything about relationships in the data. In a tabular spreadsheet organization, the relationships in the data can more clearly be represented:
+
+
+
+While this organization depicts more relationships, it does not clearly show the derived nature of the data. Reorganizing into a hierarchical database, (tree), organization allows one to quickly see this interdependency of the data:
+
+
+
+ 	PAGE (3 of 7)	 
+Lesson 1: Background: File Management
+
+Computer file management systems can be classified by the type of file organization they provide (Flat File or Hierarchical File Systems); and the type of user interface they present (Character/Command or Graphical/Event Driven). These file organizations and interfaces greatly affect how users manipulate and interact with their information.
+
+Flat File Systems
+
+Early computer file management systems (MSDOS 1.0, IBM CMS, etc.) only allow a linear list of the files. In order to group related files, users were forced to name the related files very similar, usually varying only the last 1 or 2 characters of the name or the type (extension) of the file. To be fair CMS also allows a user to maintain several 'virtual' disks which do provide a minimal level of hierarchical organization. A contributing limiting factor in these file systems was the restriction on the name of the file length (usually 8 characters -- still present in DOS and Windows 3.1 today). This serious drawback often requires the use of cryptic file names, where in the worst case each character is a code with a specific meaning. Fortunately these systems have declined in use due to the popularity of hierarchical file systems.
+
+Hierarchical File Systems
+
+Hierarchical file systems (MSDOS 2.0 or greater, UNIX, etc.), allow the creation of files which can contain other files, (directories). This allows users to group related files together in directories, often nested several levels deep.
+
+ms-dos screen shot
+MS-DOS Shell
+
+hard disk sectors
+Hard Disk Sectors	
+Physically files are stored on a disk which is ordered linearly.
+
+It is only through the interface that the user perceives the hard disk as being a hierarchically ordered device. The advantage of transforming information is clear in this example. Users are given a powerful organizational tool through a virtual transformation of the file layout data.
+
+One side effect of this organization that has arose is that some users tend to duplicate files so that they appear in several directories. This leads to problems of data redundancy and file synchronization (aka data integrity). These problems can be avoided through the use of an alias (link), feature which creates a dummy file in one directory to refer to the actual file in another directory. Changing the dummy file in reality changes the actual file because multiple copies of the file do not exist.
+
+Operating System Interfaces
+
+If a picture is worth a thousand words how much is an icon worth? The following sections will contrast some of the effects upon information organization that character and graphical interfaces exhibit.
+
+Character / Command Driven
+
+Character/command driven interfaces arose out of necessity. The early processors were not powerful enough to handle the large amounts of data required for image processing. Some computer users argue that an experienced person can accomplish similar tasks faster with a character interface than a graphical interface. While this claim may be true, it requires a high learning curve in order for someone to become experienced. The high learning curve is due to the heavy cognitive memory load required of users. There is little doubt that inexperienced users can accomplish tasks faster with a graphical interface than a character interface.
+
+Many of the complaints against character based interfaces are due to the lack of standards. This requires users to learn different commands for accomplishing the same task in different programs. More standardization has occurred for graphical interfaces due to the lessons learned previously; and the fact that graphical programming, being more difficult, allows standards to be more easily enforced.
+
+Command driven interfaces only allow a user to execute a particular set of operations at any given time. This restricts the types of information sharing between tools that users can easily perform. It forces a linear task ordering pattern upon people who naturally tend to switch from task to task as they freely associate information with different tasks.
+
+Graphical / Event Driven
+
+Because the human mind is much more adept at processing image information quickly than textual information, graphical user interfaces (GUI) such as Macintosh, and Windows 2000 have become defacto standards. A GUI is sometimes referred to as a WIMP (Windows Icons Mouse Pull-down menus) interface. Although somewhat derogatory, this acronym accuractely gives the elements that comprise a GUI.
+
+While many of the advantages of graphical interfaces are apparent there are disadvantages. Iconic representation of information is not the most efficient in terms of compactness. Iconic languages such as Chinese and Japanese (Kanji), have extremely large icon, i.e. character, sets. GUIs are event-driven interfaces. This forces programs to be able to react to multiple events at any given time. Events such as menus being accessed; text being typed; icons from palettes being chosen; switching to other programs, etc. Allowing users to quickly shift between applications provides them with the ability to interleave tasks and work concurrently. A person may or may or may not be able to actually perform work in parallel depending upon whether the underlying operating system is multi-tasking, suspended tasking, or single task (DOS).
+
+ 
+
+ element k: the knowledge catalyst
+
+Lynda offers online tutorials on the following related topics and applications (among others):
+
+Windows 8
+Windows File Explorer
+Windows 7 Essential Training
+Unix for Mac OS X users
+Linux
+
+
+
+ 	PAGE (4 of 7)	 
+Lesson 1: Background: Text Processing
+
+Modern word processors run the gamut from simple formatters to powerful desktop publishing programs (DTP). A person must decide upon the purpose and audience of their document in many cases before choosing which tool to use.
+
+Desktop publishing programs provide close to true WYSIWYG typesetting and page layout. They are traditionally used for documents intended for large audiences. Documents such as brochures, flyers, newletters, magazines, textbooks, etc. The underlying data organization for most DTP is that of a pasteboard or whiteboard; this is simply a metaphor for a posterboard on which a user can place anything they wish at any location. It requires one to first organize their information into some form of a traditional publication layout.
+
+Word processors have been discussed previously in terms of their affects upon a user's information organization. It is worth mentioning that many utility tools have been incorporated into word processors. These utilities provide such tools as grammar checking, dictionaries, thesauri, "quote generators", etc. While none of these aids are new, their easy electronic access ensures that users will incorporate these pre-existing knowledge and information bases into their writing much more frequently than in the past.
+
+In order to effectively create DTP documents one needs to have a basic understanding of standard file formats for both text and graphics, (covered in Lesson 5).
+
+ element k: the knowledge catalyst
+
+Lynda offers online tutorials on the following related topics and applications (among others):
+
+Adobe InDesign
+WordPress
+Digital Publishing Fundamentals
+
+
+ 	PAGE (5 of 7)	 
+Lesson 1: Background: Text Formats
+
+The specification of how a document can be displayed and printed is determined by the format in which the file is stored. Several standards have been proposed by governments and companies. This document will briefly describe some of the attributes of the most popular formats. The reader should be aware that many more formats than discussed are in existence and more are being proposed as standards quite frequently.
+
+The lowest common denominator of text file formats in the USA is the American Standard Code for Information Interchange (ASCII). There are actually two forms of ASCII: standard and extended. Standard ASCII only contains codes for 128 characters, (i.e. a 7 bit binary code). It is transportable across all networks and capable of being accessed and manipulated on all computers. Extended ASCII is a non-standard format containing codes for 256 characters, (i.e. 1 byte code). The first (lower), 128 characters of extended ASCII are actually just the standard ASCII character codes. The second (upper), 128 character codes are machine dependent. Each hardware vendor defines the codes for their own platform. The characters for the codes differ from font (character typeface), to font. They are typically used for various purposes such as: specifying special graphic characters; extended device control (printer, modem, etc.); and application specific file format codes. Internationally, the superset of ASCII is the Unicode standard. Unicode is typically implemented as either 12-bit or 16-bit codes. For compatibility purposes one byte of the Unicode implementation stores ASCII codes.
+
+Even transferring plain text files between different systems can present problems. The most common problem is the way in which different systems represent the end of the line. The Macintosh stores a carriage return character (ASCII code 13), at the end of each line, whereas Unix uses a linefeed character (ASCII code 10), to denote the end of the line and yet Microsoft/DOS does it a third way using both a linefeed and carriage return character at the end of lines.
+
+The PostScript file format was developed by Adobe Systems Inc. It was designed as a typesetting language for specifying high quality page layouts. There are actually several forms of PostScript. Only two forms will be briefly mentioned here: PostScript and encapsulated PostScript. The driving force behind the development of the PostScript (sample file), language was as a device driver language for laser printers. It has since developed into a display language and exists in two levels offering two-dimensional and three-dimensional drawing features. Encapsulated PostScript (EPS), is simply an extension of the PostScript language to achieve machine independence. The aim was to allow documents to be transportable across hardware platforms without any loss of document data, structure or display information. This goal is only now being realized through the development of the Adobe Acrobat system that will be discussed later in the course. EPS files are typically much larger than corresponding PostScript files since they include font table information and PostScript functions to aid portability. For example the sample document above required 30K (30,000 characters), of storage for the PostScript version and over 900K (900,000 characters) for an EPS version.
+
+Rich Text Format (RTF), was developed by the Microsoft Corp. for many of the same reasons as PostScript was developed. It was not however designed as a full-featured typesetting language. As such it will not store enough layout information about a document to ensure WYSIWYG platform portability. Most word processors support the RTF format (usually in the Open or Save dialogs options are provided for specifying the document type). RTF (sample file), unlike PostScript is a text format only. Any documents containing graphics converted to RTF and then re-opened as an RTF document will not contain the original document graphics.
+
+HyperText Markup Language (HTML), is the format underlying the World-Wide Web (WWW), documents that WWW browser programs such as Internet Explorer display and traverse. HTML is a document structure language. As such it does not provide operations for a writer to specify exactly how a document should be displayed, only the outline or structure may be indicated.
+
+Any HTML document viewed with Firefox, Internet Explorer, or Safari can be viewed in raw HTML form (i.e. with the HTML formatting code not interpreted). By choosing View source from the File menu (View menu if using Netscape) or choosing Save as ... from the File menu and then setting the saved file type to HTML one can then look at the HTML document structure codes. The HTML format provides operation codes for linking (connecting), documents together. This is the basis for Hypertext and it forces a non-linear method of information organization upon the author. A writer must continually think about relationships that exist in their information and how best to present those relationships to the readers. HTML is actually a subset of a more general and powerful document specification language SGML. An extension presentation of HTML with regards to writing HTML documents for publication on the Internet will be covered in the Network Hypermedia section of the course.
+
+Further Exploration
+
+Common Internet File Formats
+
+ element k: the knowledge catalyst
+
+Lynda offers online tutorials on the following related topics and applications (among others):
+
+Acrobat
+HTML
+
+
+
+ 	PAGE (6 of 7)	 
+Lesson 1: Background: Basic Email
+
+Configuring Your Email Program
+
+Every Virginia Tech student, staff, or faculty member is given an email account through the university. To learn how to configure your email program to access your Virginia Tech email account, read the documentation for your particular email client program.
+
+Using Your Email Program
+
+There are a number of different programs that can be used to send, receive, and filter email, such as Thunderbird, Windows Mail, Apple Mail, eM Client and a lot of other email client software programs. Additionally, it is possible to access your email over the web through such web sites as Hotmail and Yahoo and of course Google Gmail. Due to the variety of ways to send and receive email, rather than explain how to use any particular program in detail, we encourage you to use the Help System that accompanies your email program to learn about its capabilities.
+
+Listed below are tutorial sites and resources that may assist you in learning how to use a particular email program:
+
+Thunderbird
+
+Download
+Outlook Express
+
+Outlook Express in the Classroom
+ element k: the knowledge catalyst
+
+Lynda offers online tutorials on the following related topics and applications (among others):
+
+Configuring client and network connections
+Email
+Mailbox management
+
+
+ 	PAGE (7 of 7)	Background
+Lesson 1: Background: WWW Browsers
+
+Web browsing is the process of viewing hypermedia documents, commonly called web pages, created using the HTML specification. In order to use the World Wide Web (WWW), you need a computer that is connected to the Internet and a web browser (or HTML client application).? Although web browsers originally only allowed the viewing of web pages with text and graphics, modern browsers have "plug-in" capability for adding mini-applications that increase the browser's functionalities. Modern browsers also often come bundled with e-mail clients, newsreaders, and web page editors and support Java, a distributed programming language developed for cross-platform and cross-network applications. A history of web browsers is available for the interested reader.
+
+Microsoft Internet Explorer
+
+Microsoft's Internet Explorer is the most popular web browser on the market today and is currently at version 8.0. If you have a Microsoft Windows operating system, then you should have a version of Internet Explorer, as this browser comes pre-installed on the operating system.
+
+Some Macintosh users may have an older version of Internet Explorer (version 5.2.3) installed, as this was the default browser on the Macintosh platform until Apple switched to the Safari browser. Microsoft announced that it will no longer develop Internet Explorer for the Mac.
+
+Internet Explorer is not available for the Linux operating system or other variants of Unix.
+
+Internet Explorer home page
+Firefox (Mozilla)
+
+Firefox is a free, open-source browser produced by the non-profit Mozilla Foundation. Open-source means that the actual program code for the browser is available for anyone to see. The Firefox browser is being programmed largely by a team of volunteers and a small paid staff funded by Microsoft rivals AOL, Sun Microsystems, Red Hat, and others. Firefox is a "tabbed" browser which means that you can open more than one web page within the main browser window, and each open page can be quickly accessed by clicking on a tab at the top of the page Firefox has been written so that users can easily add new features by installing optional extensions.
+
+Thunderbird is a popular open-source email client developed the Mozilla Foundation to supplement the Firefox Browser. 
+
+Firefox home page
+Thunderbird home page
+Chrome (Google)
+
+Chrome is a free browser produced Google that is now widely popular. Chrome is partially open-source as Google released the majority of the code to encourage developers to study and build applications off of the browser. Chromes underlying design stresses clean simplistic interface, along with fast and stable network access.
+
+Chrome home page
+Safari
+
+Apple computer has recently released a version of the Safari browser for Windows in addition to the version for its operating system, OS X. Safari is a version of Konqueror, a Unix-based browser, and its use in OS X is due to the fact that the new Macintosh operating system is based on a free version of Unix called BSD. Safari is a tabbed browser and advertised as the fastest browser for the Macintosh.
+
+Safari Home Page
+Other Browsers
+
+Another somewhat popular browser is Opera, which is available for most major operating systems. Wikipedia has an extensive list of web browsers.
+
+Netscape Navigator
+
+Netscape was probably the first truly popular browser. It has been steadily losing market-share to Internet Explorer for many years, and is now owned by AOL. AOL recently halted development of Netscape.
+
+ 
+
+ element k: the knowledge catalyst
+
+Lynda offers online tutorials on the following related topics and applications (among others):
+
+What are web browsers
+How browsers work
+Browers: Internet Explorer, Firefox, Chrome OS

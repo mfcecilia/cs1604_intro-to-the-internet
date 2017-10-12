@@ -1,0 +1,63 @@
+
+Preliminary Material	PAGE (1 of 4)	 
+Lesson 0: Preliminary Material: VT Email Address
+
+An e-mail address has two parts which are separated by an "@" (at sign).
+
+The first part will resemble your real name. At Virginia Tech this is known as your PID.
+The second part is the address of the computer on which you receive your mail or the address of your mail server. At Virginia Tech the Campuswide mail server is known as vt.edu.
+Therefore, your e-mail address will be: your_pid@vt.edu
+
+Note: All PIDs are lowercase but you can set up to three aliases for your PID using whatever capitalization and punctuation you prefer.
+
+Here are some sample e-mail addresses for people who use the Campuswide mail server:
+
+jwatson@vt.edu
+barnette@vt.edu
+Judy.Watson@vt.edu
+
+
+
+
+ 	PAGE (2 of 4)	 
+Lesson 0: Preliminary Material: VT Get Connected
+
+For this course, you will need a modern processor computer with disk space and memory to spare, a PID (which is used as your e-mail address), an ethernet  IP address, and software. VT students can take care of most of these items during Fall Express Check-In. Much of the information on getting connected at VT is linked off of the VT Computing Web site.
+
+The VT computing student getting started guide is the best place to start.
+If you are an on-campus student, connect your machine on campus via ethernet. If you need help access and contact the 4Help Computer Consulting group. 
+If you have a Windows or Macintosh system, check out Computing Center Get Connected page for help getting online. 
+On-campus users need a Network Interface Card (NIC). The acceptable NICs are listed on the computer requirements page. 
+Off-campus students without a high-speed internet connection may need to purchase a modem. The CNS has network connection information. 
+If you live in an apartment with Ethernet, check with your ISP (Intener Service Provider) to get your IP address and to get your Ethernet activated.
+Be aware that all network users must follow the Va Tech Acceptable Use policies.
+
+Non-Va Tech Students
+
+Non Blacksburg students will need to establish an account with an Internet Service Provider (ISP). Wikipedia has a good list of ISPs. ISP will have their own support staff to help customers get connected Typically ISPs will require customers to go through a setup procedure to establish a DHCP (Dynamic Host Configuration Protocol). There are many good sites with information for people getting started with Internet connections: Intenet 101, Internet beginner's guides.
+
+
+
+
+
+
+ 	PAGE (3 of 4)	 
+Lesson 0: Preliminary Material: Intro VT CC
+
+Students, faculty, and staff have access to a broad array of networks, computer systems, software, and electronic information resources to support their academic endeavors. The University Computing Services (UCS)?maintains a web site that explains access for the available resources of the computing center, as well as, where to find help.
+University Computing Services
+Student Software Distribution
+Campus Computer  Labs
+VT Computing Intro & Electronic Mail
+
+Relevant Va Tech documents on email:  http://mail.google.vt.edu/
+VT Google Apps portal
+VT Google Web Email configuration
+VT Google Apps Portal help
+How to VT knowledge base email
+Virginia Tech acceptable use policy guidelines
+The Va Tech Campus Network
+
+Virginia Tech Information Systems provides electronic mail and other networking services. These links will help you understand the basic services and structure of the campus LAN.
+Communications Network Services (CNS) - data services 
+CNS - Network and Connectivity FAQs 

@@ -1,0 +1,111 @@
+
+PAGE (1 of 3)	 
+Lesson 2: Networking
+
+Over the years different models for performing computation have been developed, (e.g., batch processing or time-sharing). The two most common forms of application computation: stand-alone and distributed computing will be briefly described here.
+
+?
+
+Stand-Alone Computing: The Isolated Application Model
+
+The majority of computing, for most of the existance of computers, has been performed on single-computers, one program executing at a time. A stand-alone application program solves a problem by itself. It performs all the necessary computation using only the local resources available to it. Since it is not connected to any network or other machine, a standalone machine shares no data, nor any resources with any other computer.
+
+?
+
+Networked Computing: The Client-Server (Distributed) Model
+
+Networking came about because of the need for distributed data. If you consider an airline booking system, thousands of check-in personnel, airline reservationists across the world needs to gain access to the same data, the schedules and seats of the aircrafts an airline provides.
+
+Simply put, "networking is about making connections." Just as a professional can "network" with other people to share ideas, and be more productive, a computer can network with other computers to share data, such as airline schedules and occupancy, and share resources such as printers, modems, and even hard disks. An apt metaphor for a networked computing system is the interconnected cells of the human brain. Similar to the human brain, individual cells can perform processing, but the interconnections and sharing of data between the brains provide even more capabilities.
+
+
+
+The required access to a pool of data saw the growth of operating systems into large centralized mainframe configured computers. In this configuration, one large computer provided most of the data and the computing power, and several directly connected hard-wired terminal interfaces provided control devices, (for entering programs or issuing commands), for the computer system. These terminal interfaces could be remotely located in another room, or for an application such as an airline booking system, across the nation as long as they were connected to the mainframe through dedicated lines.
+
+The advent of micro-computers brought about the decline of centralized mainframe computing and made possible the currently popular use of the client-server (C-S) model, currently the dominant form of computing. In the C-S model, client applications send messages requesting services from server applications, (hence the name). The decomposition of monolithic operating systems into C-S systems provided the background research for the application of the C-S model to networks. Clients tend to be small programs that leave the bulk of computing and policy making up to server programs dedicated to "serving" requests for data. Although a computer can be dedicated to be a server or as a client, modern operating systems and computing platforms are multi-tasking and can support both modes simultaneously. That is, a computer can run several server applications at the same time it runs several client applications.
+
+Currently, there are several types of networks. Local Area Networks (LANs) are made up of computers physically located within the same premise, usually a room or perhaps building. The actual networking mechanism that connects the computers and hardware such as printers that make up a LAN are dedicated exclusively to supporting the LAN. A Wide Area Network, WAN, is much like a LAN except that it is distributed over a larger area, such as a university campus. A WAN can also interconnect several LANs.
+
+The Internet, of which the World Wide Web (WWW) is but a part, is truly distributed. The connection lines that support the Internet are varied, including modems and telephone lines, video cables, high speed T1 lines, fiber optics, and even satellite uplinks.
+
+World Wide Web: A C-S Model
+
+The World Wide Web is a very distributed form of computing. When you click on a hyperlink, the browser sends a request to a computer somewhere in the world for a certain file. The Web server on the remote computer responds to the request and returns the appropriate document to the browser. The browser then renders the document to the screen. It is this C-S model that requires you to be connected to the internet for Web browsing.
+
+Three Main Components to the Web
+
+WWW Browsers
+Client applications for interpreting and displaying HTML documents. (i.e. Netscape Navigator and Internet Explorer)
+HyperText Markup Language (HTML)
+The structuring language used to create the web pages you see.
+To see an example of this language in action, go to the "View" menu and select the "view source" or "source" option.
+HyperText Transport Protocol (HTTP)
+Web servers executing HTTP programs to handle the routing and transport of documents requested by Web browsers.
+?
+
+The latest type of network is the Intranet. Intranet technology was developed to provide the security of dedicated networks, but over the cheap backbone of the Internet. It uses the same infrastructure of connected computer relays and connection lines as the internet, but employs special protocols, (think of it as cyphers or languages), and encryptions to simulate a dedicated network.
+
+?
+
+Local Area Network
+The Internet
+Intranets
+VPN (Virtual Private Network) - VPN@VT
+
+
+
+
+ 	PAGE (2 of 3)	 
+Lesson 2: Intro LANS
+
+Computing systems have always had a need to share information (data) and resources among remotely located users. Thus the development of LANs. In fact, the need to share computer files, programs, printers, and disk storage devices among computers accelerated the growth of LANs. An early example of a LAN is the telephone network which has been in existence for a good number of years.
+
+LANs provide high-speed communication within a limited geographic area. They are designed to provide communication and information exchange for all aspects of information processing. The physical media used by the LAN may be twisted-pair, coaxial cable, or fiber optics to name a few.
+
+LAN Design Goals:
+
+High Speed and Bandwidth -- Data should move quickly over the LAN, and many users should be served simultaneously.
+Reliable and Maintainable -- Users should be able to access the network reliably, and the LAN hardware and software should be reliable and easy to maintain.
+Low Cost -- As more people rely on LANs, the cost per person should decrease to keep LANs affordable.
+Compatibility -- Equipment from different vendors should be able to use and be integrated into the LAN.
+Extendable -- Additional users and equipment should be accommodated/integrated into the LAN without requiring major changes on the part of current users and equipment already part of the LAN.
+Standards -- The LAN should follow networking, ISO, or ANSII standards. The University of Illinois provides a good reference for LANs and networking.
+Telephone (Analog) vs Data (Digital) Networks
+
+Voice signals used by most telephones are analog while data signals are digital. Analog signals are continuous sinusoidal transmissions, whereas digital signals have two states: on and off. A modem is required to convert between the two.
+If you are on the Virginia Tech campus, you can connect directly to the Va Tech computing network through a high speed ethernet interface. However, if you live off campus and have to connect to the VT LAN network, you do so through the modem pool. You will need a modem on your computer to perform the analog to digital conversion. This transfer through analog telephone lines and modems result in very slow data throughput, (currently at 56.6 kbps - 28.8 kbps), many times slower than through the digital ethernet. 
+
+Virginia Tech Networks
+
+Virginia Tech provides network access through a LAN Ethernet. The campus has ethernet wiring in all of its academic buildings and dorms. Here is a somewhat dated overview of the networks on the VT campus.
+Communications Network Services is in-charge of networking on the Virginia Tech campus. Virginia Tech is using an ATM 622Mbps connection for IP over ATM. Check out the following ATM tutorial.
+
+Further Reading
+
+More general information on ethernet is also available from the University of Texas.
+
+
+
+ 	PAGE (3 of 3)	
+Lesson 2: Intro Internet and WWW
+
+The Internet grew out of the National Science Foundation Network. The previous link is a Quicktime digital movie describing the very early growth and development of the NSF network. (You will need a Quicktime plug-in to view it. The file is 4MB in size and may take some time to download.) For a more up-to-date idea of how large the Internet has become visit "The OPTE Project" and view their Internet maps and videos. Another good source for Internet size information is The Internet Mapping Project.
+
+The following linked documents provides excellent explanations of the relationship between the NSF and the Internet (past and future):
+
+A Brief History of NSF and the Internet
+NSF and High-Performance Networking Infrastructure
+The Internet is much more than web pages. It is a conduit through which data passes, and this data can be e-mail, files transmitted through File Transfer Protocol (FTP), as well as the familiar web pages.
+
+The following links provide access to a variety of documents that exist on the Net that people have authored as introductions to the Internet. They are located in a variety of machines throughout the world, but because they are connected to the Internet, they are all just a mouse-click away from your viewing. 
+  
+ 
+
+Internet Intro Documents and Resources
+
+A Hypertext Intro to the Internet
+Everything you want to know about the Internet
+World-Wide Web Intro Documents
+
+World Wide Web Initiative: The Project - THE Home Page of The WWW.
+INTERNET BEGINNER'S GUIDES & TUTORIALS
